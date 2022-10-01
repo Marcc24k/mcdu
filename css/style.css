@@ -10,18 +10,18 @@
   -webkit-transition-property: fill;
   -webkit-transition-duration: 2s;
   -webkit-transition-timing-function: linear;
-  -webkit-transition: fill 0.2s ease;
+  -webkit-transition: fill 0.3s ease;
 
   /* Standard syntax */
   transition-property: color;
   transition-duration: 0.2s;
   transition-timing-function: linear;
-  transition: fill 0.2s ease;
+  transition: fill 0.3s ease;
 }
 
 #mcdu {
   position: relative;
-  width: 386px;
+  width: 384px;
   height: 600px;
   border: 1px solid #46535e;
   border-radius: 9px;
@@ -56,7 +56,7 @@
   width: 35px;
   text-align: center;
   font-size: 10px;
-  color: #d38152;
+  color: #c3967d;
 }
 
 .fm-one > p,
@@ -177,7 +177,7 @@
   background-color: #726f4da6;
 }
 
-.mcdu-screen {
+#mcdu-screen {
   position: absolute;
   background: black;
   width: 284px;
@@ -186,6 +186,116 @@
   border-radius: 10px;
   left: 34px;
   top: 20px;
+}
+
+/* WHITE LINES LEFT SIDE */
+#mcdu-white-line-left {
+  position: absolute;
+  /*   border: 2px hidden red; */
+  width: 15px;
+  height: 185px;
+  top: 0px;
+  left: 30px;
+}
+
+.white {
+  position: relative;
+  /*     border: 1px solid #c3967d; */
+  width: 14px;
+  height: 0.1px;
+  background-color: whitesmoke;
+  transform: rotate(10deg);
+}
+
+.line-one {
+  top: 7px;
+  left: 5px;
+}
+
+.line-two {
+  top: 36px;
+  left: 5px;
+}
+
+.line-three {
+  top: 67px;
+  left: 5px;
+}
+
+.line-four {
+  top: 96px;
+  left: 5px;
+}
+
+.line-five {
+  top: 126px;
+  left: 5px;
+}
+
+.line-six {
+  top: 156px;
+  left: 5px;
+}
+
+.line-seven {
+  top: 185px;
+  left: 5px;
+}
+
+/* RIGHT SIDE LINES */
+
+#mcdu-white-line-right {
+  position: absolute;
+  /*   border: 2px hidden red; */
+  width: 15px;
+  height: 185px;
+  top: 0px;
+  left: 330px;
+}
+
+.white-right {
+  position: relative;
+  /*     border: 1px solid #c3967d; */
+  width: 14px;
+  height: 0.1px;
+  background-color: whitesmoke;
+  transform: rotate(-10deg);
+   left: 5px;
+}
+
+.line-eight {
+  top: 7px;
+  
+}
+
+.line-nine {
+  top: 37px;
+  
+}
+
+.line-ten {
+  top: 66px;
+  
+}
+
+.line-eleven {
+  top: 95px;
+  
+}
+
+.line-twelve {
+  top: 123px;
+  
+}
+
+.line-thirteen {
+  top: 152px;
+  
+}
+
+.line-fourteen {
+  top: 180px;
+  
 }
 
 .mcdu-menu {
@@ -205,7 +315,7 @@
   flex-wrap: nowrap;
   width: 280px;
   height: 207px;
-  /*     border: 2px solid red; */
+  /*     border: 2px hidden red; */
   text-align: center;
   flex-direction: column;
   align-content: center;
@@ -215,53 +325,62 @@
   opacity: 0;
 }
 
-.fmgc-req,
-.atsu,
-.aids,
-.cfds,
-.return {
+#fmgc-req,
+#atsu,
+#aids,
+#cfds,
+#retun,
+#aevc {
   /*   color: whitesmoke; */
   font-family: monospace;
   font-size: 12px;
   left: 10px;
 }
 
-.fmgc-req {
+#fmgc-req {
   position: relative;
-  /*   border: 2px solid green; */
-  min-width: 35px;
+  /*   border: 2px hideen green; */
+  min-width: 25px;
   min-height: 5%;
   top: 13px;
 }
 
-.atsu {
+#atsu {
   position: relative;
-  /*   border: 2px solid green; */
+  /*   border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
   top: 25px;
 }
 
-.aids {
+#aids {
   position: relative;
-  /*   border: 2px solid green; */
+  /*   border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
   top: 43px;
   color: green;
 }
 
-.cfds {
+#cfds {
   position: relative;
-  /*   border: 2px solid green; */
+  /*   border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
   top: 55px;
 }
 
-.return {
+#box {
   position: relative;
-  /* border: 2px solid green; */
+  /*   border: 2px hideen green; */
+  min-width: 35px;
+  min-height: 5%;
+  top: 55px;
+}
+
+#retun {
+  position: relative;
+  /* border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
   top: 125px;
@@ -271,29 +390,29 @@
 /*MCDU LEFT SIDE BUTTONS  */
 #mcdu-left-buttons {
   position: relative;
-  border: 1px hidden black;
-  width: 20px;
+  border: 1px hidden red;
+  width: 31px;
   height: 219px;
-  margin-left: 5px;
+  margin-left: 0px;
   top: 40px;
 }
 
 /*MCDU SCREEN BUTTONS*/
-.L1-button,
-.L2-button,
-.L3-button,
-.L4-button,
-.L5-button,
-.L6-button,
-.L7-button,
-.R1-button,
-.R2-button,
-.R3-button,
-.R4-button,
-.R5-button,
-.R6-button,
-.R7-button {
-  /*   position: relative;  */
+#L1-button,
+#L2-button,
+#L3-button,
+#L4-button,
+#L5-button,
+#L6-button,
+#L7-button,
+#R1-button,
+#R2-button,
+#R3-button,
+#R4-button,
+#R5-button,
+#R6-button,
+#R7-button {
+  position: absolute;
   width: 19px;
   height: 11px;
   border: 1px inset black;
@@ -301,42 +420,73 @@
   background: black;
 }
 
+#L1-button {
+  top: 0;
+  left: 5px;
+}
+#L2-button {
+  top: 30px;
+  left: 5px;
+}
+#L3-button {
+  top: 60px;
+  left: 5px;
+}
+#L4-button {
+  top: 90px;
+  left: 5px;
+}
+#L5-button {
+  top: 120px;
+  left: 5px;
+}
+#L6-button {
+  top: 150px;
+  left: 5px;
+}
+#L7-button {
+  top: 180px;
+  left: 5px;
+}
+
 /*  MCDU BUTTON TICKS*/
 .tick {
   position: absolute;
-  /*   border: 1px solid #d38152; */
+  /*   border: 1px solid #c3967d; */
   width: 7px;
   height: 0.1px;
   background-color: whitesmoke;
+  z-index:2;
+  left:10px;
 }
 
 .L1 {
-  top: 6.4px;
-  left: 6.8px;
+  top: 6px;
+/*   left: 6px; */
 }
 .L2 {
   top: 35px;
-  left: 6.8px;
+/*   left: 6.8px; */
 }
 .L3 {
-  top: 64px;
-  left: 6.8px;
+  top: 65px;
+/*   left: 6.8px; */
 }
 .L4 {
-  top: 93px;
-  left: 6.8px;
+  top: 95px;
+/*   left: 6.8px; */
 }
 .L5 {
-  top: 123px;
-  left: 6.8px;
+  top: 125px;
+/*   left: 6.8px; */
 }
 .L6 {
-  top: 152px;
-  left: 6.8px;
+  top: 155px;
+/*   left: 6.8px; */
 }
 .L7 {
-  top: 182px;
-  left: 6.8px;
+  top: 185px;
+/*   left: 6.8px; */
 }
 
 /* FINGER GUARDS */
@@ -346,112 +496,139 @@
   /* border: 0px inset #0d1012; */
   /* border-radius: 2px; */
   background: #586570;
-  width: 26px;
+  width: 34px;
   height: 12px;
+  left: 0px;
 }
 
 .L-guard-1 {
-  top: 14.7px;
-  left: -5px;
+  top: 14px;
+  /*   left: -5px; */
 }
 
 .L-guard-2 {
-  top: 45px;
-  left: -5px;
+  top: 44px;
 }
 
 .L-guard-3 {
-  top: 74.3px;
-  left: -5px;
+  top: 74px;
 }
 
 .L-guard-4 {
-  top: 102.7px;
-  left: -5px;
+  top: 104px;
 }
 
 .L-guard-5 {
-  top: 132px;
-  left: -5px;
+  top: 134px;
 }
 
 .L-guard-6 {
-  top: 161.3px;
-  left: -5px;
+  top: 164px;
 }
 
 /* FINGER R-GUARDS */
 
 .R-guard-1 {
-  top: 14.7px;
-  left: 356px;
+  top: 14px;
+  left: 350px;
 }
 
 .R-guard-2 {
   top: 45px;
-  left: 356px;
+  left: 350px;
 }
 
 .R-guard-3 {
-  top: 74.3px;
-  left: 356px;
+  top: 74px;
+  left: 350px;
 }
 
 .R-guard-4 {
-  top: 102.7px;
-  left: 356px;
+  top: 103px;
+  left: 350px;
 }
 
 .R-guard-5 {
-  top: 132px;
-  left: 356px;
+  top: 134px;
+  left: 350px;
 }
 
 .R-guard-6 {
-  top: 161.3px;
-  left: 356px;
+  top: 164px;
+  left: 350px;
 }
 
 /*MCDU RIGHT SIDE BUTTONS  */
 
 #mcdu-right-buttons {
   position: absolute;
-  border: 1px hidden black;
-  width: 20px;
+  border: 1px hidden red;
+  width: 31px;
   height: 219px;
-  margin-left: 362px;
-  top: 40px;
+  margin-left: 358px;
+  top: 56px;
 }
+
+
+#R1-button {
+  top: 0;
+  
+}
+#R2-button {
+  top: 30px;
+   
+}
+#R3-button {
+  top: 60px;
+ 
+}
+#R4-button {
+  top: 90px;
+ 
+}
+#R5-button {
+  top: 120px;
+ 
+}
+#R6-button {
+  top: 150px;
+ 
+}
+#R7-button {
+  top: 180px;
+ 
+}
+
 
 /* RIGHT SIDE TICKS */
 
 .R1 {
-  top: 22px;
-  left: 6.8px;
+  top: 5px;
+  left: 6px;
 }
 .R2 {
-  top: 52px;
-  left: 6.8px;
+  top: 35px;
+  left: 6px;
 }
 .R3 {
-  top: 81px;
-  left: 6.8px;
+  top: 65px;
+  left: 6px;
 }
 .R4 {
-  top: 109px;
-  left: 6.8px;
+  top: 95px;
+  left: 6px;
 }
 .R5 {
-  top: 140px;
-  left: 6.8px;
+  top: 125px;
+  left: 6px;
 }
 .R6 {
-  top: 168px;
-  left: 6.8px;
+  top: 155px;
+  left: 6px;
 }
 .R7 {
-  top: 197px;
-  left: 6.8px;
+  top: 185px;
+  left: 6px;
 }
 
 /* FMGC FAIL */
@@ -461,7 +638,7 @@
   height: 120px;
   /*   border: 2px solid black; */
   top: 380px;
-  left: 4px;
+  left: 5px;
 }
 
 /* MCDU MENU */
@@ -557,8 +734,8 @@ h1 {
 }
 
 .item {
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 27px;
   margin: 5px;
   border: 3px solid black;
   border-radius: 100%;
@@ -636,13 +813,13 @@ h1 {
   top: -13px;
   font: 15px Arial, sans-serif;
   text-align: center;
-  /*   color: #d38152; */
+  /*   color: #c3967d; */
   font-family: monospace;
 }
 
 .item-alpha {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   margin: 5px;
   border: 3px solid black;
   border-radius: 10%;
@@ -771,8 +948,8 @@ h1 {
 
 .ovfy > p {
   font-size: 7.5px;
-  top: -6.5px;
-  left: -1.5px;
+  top: -8.5px;
+  left: -4.5px;
 }
 
 .clr {

@@ -18,8 +18,6 @@
 
 <body>
  
-
-
 <!--MAIN MCDU CONTAINER  -->
 <div id="mcdu">
 
@@ -52,37 +50,76 @@
   <div class="photo-resistor-bottom-right"></div>
 
   <!--   MCDU SCREEN -->
-  <div class="mcdu-screen">
-    
-<!--     CFDS MENU -->
+  <div id="mcdu-screen">
+
+    <!--     CFDS MENU -->
     <div id="cfds-menu">
       <div class="mcdu-menu">MCDU MENU</div>
-      <div class="fmgc-req">&#60;FMGC (REQ)</div>
-      <div class="atsu">&#60;ATSU</div>
-      <div class="aids">&#60;AIDS</div>
-      <div class="cfds">&#60;CFDS</div>
-      <div class="return">RETURN&#62;</div>
+      <div id="fmgc-req">&#60;FMGC</div>
+      <div id="atsu">&#60;ATSU</div>
+      <div id="aids">&#60;AIDS</div>
+      <div id="cfds">&#60;CFDS</div>
+      <div id="box"></div>
+      <div id="retun">RETURN&#62;</div>
     </div>
-    
-    
+
   </div>
 
   <!--   MCDU SCREEN BUTTONS -->
   <div id="mcdu-left-buttons">
     <div class="L1 tick "></div>
-    <p class="L1-button"></p>
+    <p onclick="tickOne()">
+      <button id="L1-button"></button>
+    </p>
     <div class="L2 tick "></div>
-    <p class="L2-button"></p>
+    <p>
+      <button id="L2-button"></button>
+    </p>
     <div class="L3 tick "></div>
-    <p class="L3-button"></p>
+    <p>
+      <button id="L3-button"></button>
+    </p>
     <div class="L4 tick "></div>
-    <p class="L4-button"></p>
+    <p>
+      <button id="L4-button"></button>
+    </p>
     <div class="L5 tick "></div>
-    <p class="L5-button"></p>
+    <p>
+      <button id="L5-button"></button>
+    </p>
     <div class="L6 tick "></div>
-    <p class="L6-button"></p>
+    <p>
+      <button id="L6-button"></button>
+    </p>
     <div class="L7 tick "></div>
-    <p class="L7-button"></p>
+    <p>
+      <button id="L7-button"></button>
+    </p>
+
+    <!--   MCDU SCREEN white-lineS -->
+
+    <!--white-line LEFT SIDE        -->
+
+    <div id="mcdu-white-line-left">
+      <div class="white line-one"></div>
+      <div class="white line-two"></div>
+      <div class="white line-three"></div>
+      <div class="white line-four"></div>
+      <div class="white line-five"></div>
+      <div class="white line-six"></div>
+      <div class="white line-seven"></div>
+    </div>
+
+    <!--white-line RIGHT SIDE        -->
+    <div id="mcdu-white-line-right">
+      <div class="white-right line-eight"></div>
+      <div class="white-right line-nine"></div>
+      <div class="white-right line-ten"></div>
+      <div class="white-right line-eleven"></div>
+      <div class="white-right line-twelve"></div>
+      <div class="white-right line-thirteen"></div>
+      <div class="white-right line-fourteen"></div>
+    </div>
 
     <!--FINGER L-guardS-->
     <div class="finger L-guard-1"></div>
@@ -105,19 +142,40 @@
   </div>
   <div id="mcdu-right-buttons">
     <div class="R1 tick "></div>
-    <p class="R1-button"></p>
+    <p>
+      <button id="R1-button"></button>
+
+    </p>
     <div class="R2 tick "></div>
-    <p class="R2-button"></p>
+    <p>
+      <button id="R2-button"></button>
+
+    </p>
     <div class="R3 tick "></div>
-    <p class="R3-button"></p>
+    <p>
+      <button id="R3-button"></button>
+
+    </p>
     <div class="R4 tick "></div>
-    <p class="R4-button"></p>
+    <p>
+      <button id="R4-button"></button>
+
+    </p>
     <div class="R5 tick "></div>
-    <p class="R5-button"></p>
+    <p>
+      <button id="R5-button"></button>
+
+    </p>
     <div class="R6 tick "></div>
-    <p class="R6-button"></p>
+    <p>
+      <button id="R6-button"></button>
+
+    </p>
     <div class="R7 tick "></div>
-    <p class="R7-button"></p>
+    <p>
+      <button  onclick= "retun()" id="R7-button"></button>
+
+    </p>
   </div>
 
   <!--   MCDU PROGRAM BUTTONS -->
@@ -134,10 +192,27 @@
 ;stroke-width:5;opacity:1" />
 
         <!--DIR -->
+        <!-- <button class="dir"><p>DIR</p></button> -->
+        <!-- <button class="prog"><p>PROG</p></button>
+        <button class="perf"><p>PERF</p></button>
+        <button class="init"><p>INIT</p></button>
+        <button class="data"><p>DATA</p></button>
+        <button class="f-plan"><p>F-PLAN</p></button>
+        <button class="rad-nav"><p>RAD NAV</p></button>
+        <button class="fuel-pred"><p>FUEL-PRED</p></button>
+        <button class="sec f-plan"><p>SEC F-PLAN</p></button>
+        <button class="atc comm"><p>ATC COMM</p></button>
+        <button class="mcdu-menu"><p>MCDU MENU</p></button>
+        <button class="airport"><p>AIRPORT</p></button>
+        <button class="arrow-up"><p>ARROW-UP</p></button>
+        <button class="next-page"><p>NEXT PAGE</p></button>
+        <button class="arrow-down"><p>ARROW-DOWN</p></button>
+        <button class="blank-one"><p></p></button>
+        <button class="blank-two"><p></p></button> -->
 
         <rect x="40" y="40" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
         <!--Text-->
-        <text class="prog-buttons" x="60" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
+        <text onclick= "dirt()" id="dir" class="prog-buttons" x="60" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
           DIR</text>
 
         <!--PROG -->
@@ -232,25 +307,31 @@
 
         <!--UP ARROW -->
 
-        <!-- <img class="up"  src="https://marcc24k.github.io/Hosted-assets/up-arrow.PNG" alt="arrow">  -->
+        <svg>
+          <!--ARROW BOX  -->
+          <rect x="85" y="100" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
+
+          <!--ARROW UP            -->
+          <image class="up" x="95" y="100" width="15" height="25" value="src" xlink:href="https://marcc24k.github.io/Hosted-assets/up-arrow.PNG" clip-path="url(#circleView)" />
+
+        </svg>
+
+        <!--DOWN ARROW -->
 
         <svg>
 
-          <rect x="85" y="100" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
+          <!--ARROW BOX            -->
+          <rect x="85" y="130" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
 
-          <image class="up" x="95" y="100" width="15" height="25" xlink:href="https://marcc24k.github.io/Hosted-assets/up-arrow.PNG" clip-path="url(#circleView)" />
+          <!--ARROW DOWN            -->
+          <image class="down" x="95" y="130" width="18" height="25" xlink:href="https://marcc24k.github.io/Hosted-assets/down-arrow.PNG" clip-path="url(#circleView)" />
 
         </svg>
 
         <!--NEXT PAGE -->
 
-    
-          <rect x="40" y="130" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
+        <rect x="40" y="130" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
 
-    
-        
-        
-        
         <!--Text -->
         <text class="prog-buttons" x="85" y="142" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
           <tspan dy="" x="60">NEXT</tspan>
@@ -258,16 +339,6 @@
 
         </text>
 
-        <!--DOWN ARROW -->
-
-        <svg>
-        <rect x="85" y="130" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-    
-              <image class="up" x="95" y="130" width="18" height="25" xlink:href="https://marcc24k.github.io/Hosted-assets/down-arrow.PNG" clip-path="url(#circleView)" />
-        
-        </svg>
-          
-        
         <!--          <img src="https://marcc24k.github.io/Hosted-assets/DOWN%20ARROW.PNG"> -->
         <!--BLANK -->
 
@@ -278,7 +349,7 @@
 
       <!--BRIGHTNESS KNOB-->
 
-      <div  onclick ="screenOn()" id="bright-knob" value="On"></div>
+      <div onclick="screenOn()" id="bright-knob" value="On"></div>
       <div id="bright-text">BRT</div>
 
     </div>
@@ -307,150 +378,148 @@
   <!--NUMBER PAD-->
 
   <div id="number-pad">
-    <div class="item one">
+    <button class="item one">
       <p>1</p>
-    </div>
-    <div class="item two">
+    </button>
+    <button class="item two">
       <p>2</p>
-    </div>
-    <div class="item three">
+    </button>
+    <button class="item three">
       <p>3</p>
-    </div>
-    <div class="item four">
+    </button>
+    <button class="item four">
       <p>4</p>
-    </div>
-    <div class="item five">
+    </button>
+    <button class="item five">
       <p>5</p>
-    </div>
-    <div class="item six">
+    </button>
+    <button class="item six">
       <p>6</p>
-    </div>
-    <div class="item seven">
+    </button>
+    <button class="item seven">
       <p>7</p>
-    </div>
-    <div class="item eight">
+    </button>
+    <button class="item eight">
       <p>8</p>
-    </div>
-    <div class="item nine">
+    </button>
+    <button class="item nine">
       <p>9</p>
-    </div>
-    <div class="item decimal">
+    </button>
+    <button class="item decimal">
       <p>.</p>
-    </div>
-    <div class="item zero">
+    </button>
+    <button class="item zero">
       <p>0</p>
-    </div>
-    <div class="item slash">
+    </button>
+    <button class="item slash">
       <p>/</p>
-    </div>
+    </button>
   </div>
 
   <!-- ALPHA PAD -->
-  
+
   <div id="alpha-pad">
-    <div class="item-alpha a">
+    <button class="item-alpha a">
       <p>A</p>
-    </div>
-    <div class="item-alpha b">
+    </button>
+    <button class="item-alpha b">
       <p>B</p>
-    </div>
-    <div class="item-alpha c">
+    </button>
+    <button class="item-alpha c">
       <p>C</p>
-    </div>
-    <div class="item-alpha d">
+    </button>
+    <button class="item-alpha d">
       <p>D</p>
-    </div>
-    <div class="item-alpha e">
+    </button>
+    <button class="item-alpha e">
       <p>E</p>
-    </div>
-    <div class="item-alpha f">
+    </button>
+    <button class="item-alpha f">
       <p>F</p>
-    </div>
-    <div class="item-alpha g">
+    </button>
+    <button class="item-alpha g">
       <p>G</p>
-    </div>
-    <div class="item-alpha h">
+    </button>
+    <button class="item-alpha h">
       <p>H</p>
-    </div>
-    <div class="item-alpha i">
+    </button>
+    <button class="item-alpha i">
       <p>I</p>
-    </div>
-    <div class="item-alpha j">
+    </button>
+    <button class="item-alpha j">
       <p>J</p>
-    </div>
-    <div class="item-alpha k">
+    </button>
+    <button class="item-alpha k">
       <p>K</p>
-    </div>
-    <div class="item-alpha l">
+    </button>
+    <button class="item-alpha l">
       <p>L</p>
-    </div>
-    <div class="item-alpha m">
+    </button>
+    <button class="item-alpha m">
       <p>M</p>
-    </div>
-    <div class="item-alpha n">
+    </button>
+    <button class="item-alpha n">
       <p>N</p>
-    </div>
-    <div class="item-alpha o">
+    </button>
+    <button class="item-alpha o">
       <p>O</p>
-    </div>
-    <div class="item-alpha p">
+    </button>
+    <button class="item-alpha p">
       <p>P</p>
-    </div>
-    <div class="item-alpha q">
+    </button>
+    <button class="item-alpha q">
       <p>Q</p>
-    </div>
-    <div class="item-alpha r">
+    </button>
+    <button class="item-alpha r">
       <p>R</p>
-    </div>
-    <div class="item-alpha s">
+    </button>
+    <button class="item-alpha s">
       <p>S</p>
-    </div>
-    <div class="item-alpha t">
+    </button>
+    <button class="item-alpha t">
       <p>T</p>
-    </div>
-    <div class="item-alpha u">
+    </button>
+    <button class="item-alpha u">
       <p>U</p>
-    </div>
-    <div class="item-alpha v">
+    </button>
+    <button class="item-alpha v">
       <p>V</p>
-    </div>
-    <div class="item-alpha w">
+    </button>
+    <button class="item-alpha w">
       <p>W</p>
-    </div>
-    <div class="item-alpha x">
+    </button>
+    <button class="item-alpha x">
       <p>X</p>
-    </div>
-    <div class="item-alpha y">
+    </button>
+    <button class="item-alpha y">
       <p>Y</p>
-    </div>
-    <div class="item-alpha z">
+    </button>
+    <button class="item-alpha z">
       <p>Z</p>
-    </div>
-    <div class="item-alpha dash">
+    </button>
+    <button class="item-alpha dash">
       <p>-</p>
-    </div>
-    <div class="item-alpha plus">
+    </button>
+    <button class="item-alpha plus">
       <p>+</p>
-    </div>
-    <div class="item-alpha ovfy">
-        <p>OVFY
-       <svg>
-<!--OVFY     -->
-            <image x="-2" y="-2" width="25" height="25" xlink:href="https://marcc24k.github.io/Hosted-assets/OVFY.PNG" clip-path="url(#circleView)" />
-        
+    </button>
+    <button class="item-alpha ovfy">
+      <p>OVFY
+        <svg>
+          <!--OVFY     -->
+          <image x="-2" y="-2" width="25" height="25" class="ovfy-arrow" xlink:href="https://marcc24k.github.io/Hosted-assets/OVFY.PNG" clip-path="url(#circleView)" />
+
         </svg>
 
-  
       </p>
-    </div>
-    <div class="item-alpha clr">
+    </button>
+    <button class="item-alpha clr">
       <p>CLR</p>
-    </div>
+    </button>
 
   </div>
-  
-</div>
 
+</div>
     <script src="js/script.js"></script>
 
 </body>
