@@ -52,15 +52,18 @@
   <!--   MCDU SCREEN -->
   <div id="mcdu-screen">
 
-    <!--     CFDS MENU -->
+    <!--     CFDS MENU STATIC MENU-->
     <div id="cfds-menu">
-      <div class="mcdu-menu">MCDU MENU</div>
-      <div id="fmgc-req">&#60;FMGC</div>
+      <div id="mcdu-menu">MCDU MENU</div>
+      <div id="fmgc-req">&#60;FMGC</div> 
       <div id="atsu">&#60;ATSU</div>
       <div id="aids">&#60;AIDS</div>
       <div id="cfds">&#60;CFDS</div>
       <div id="box"></div>
       <div id="retun">RETURN&#62;</div>
+      <div id="comm-menu"><!----EMPTY BUCKET TO BE FILLED---></div>
+      <div id="aoc"><!----EMPTY BUCKET TO BE FILLED---></div>
+
     </div>
 
   </div>
@@ -72,7 +75,7 @@
       <button id="L1-button"></button>
     </p>
     <div class="L2 tick "></div>
-    <p>
+    <p onclick="tickTwo()">
       <button id="L2-button"></button>
     </p>
     <div class="L3 tick "></div>
@@ -147,7 +150,7 @@
 
     </p>
     <div class="R2 tick "></div>
-    <p>
+    <p onclick = "aoc()">
       <button id="R2-button"></button>
 
     </p>
@@ -521,6 +524,7 @@
 
 </div>
     <script src="js/script.js"></script>
+    <script src="js/menuOptions.js"></script>
 
 </body>
 

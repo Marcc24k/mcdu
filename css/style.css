@@ -298,7 +298,7 @@
   
 }
 
-.mcdu-menu {
+#mcdu-menu {
   position: absolute;
   min-width: 100%;
   min-height: auto;
@@ -315,7 +315,7 @@
   flex-wrap: nowrap;
   width: 280px;
   height: 207px;
-  /*     border: 2px hidden red; */
+      /* border: 2px hidden red; */
   text-align: center;
   flex-direction: column;
   align-content: center;
@@ -330,7 +330,9 @@
 #aids,
 #cfds,
 #retun,
-#aevc {
+#aevc,
+#aoc,
+#comm-menu {
   /*   color: whitesmoke; */
   font-family: monospace;
   font-size: 12px;
@@ -383,9 +385,29 @@
   /* border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
-  top: 125px;
+  top: 120px;
   left: 223px;
 }
+
+/* COMM-MENU */
+#comm-menu {
+  position: relative;
+  min-width: 35px;
+  min-height: 5%;
+  top: 120px;
+  left: 208px;
+}
+
+/* RIGHT SIDE BUTTONS */
+
+#aoc{
+  position: absolute;
+  min-width: 60px;
+  min-height: 5%;
+  top: 43px;
+  left: 215px;
+}
+
 
 /*MCDU LEFT SIDE BUTTONS  */
 #mcdu-left-buttons {
