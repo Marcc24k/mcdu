@@ -10,7 +10,7 @@ function screenOn() {
     document.getElementById("bright-knob").value = "On";
     $("#cfds-menu").css({ opacity: "0" });
     //BUTTON ILLUMINATION
-    $("#bright-text, .item, .item-alpha, .prog-buttons").css({
+    $("#bright-text, .item, .item-alpha, .prog-buttons, #mcdu-menu-button > p, #dir-menu,  #prog-menu, #perf-menu, #init-menu, #data-menu, #fplan-menu, #radnav-menu, #fuel-pred-menu, #sec-menu, #atc-menu").css({
       color: "whitesmoke",
       fill: "whitesmoke"
     });
@@ -26,7 +26,7 @@ function screenOn() {
     //ARROWS COLOR
 
     //ARROWS COLOR UP
-    $(".up").attr(
+    $(".up, .down, .ovfy-arrow ").attr(
       "xlink:href",
       "https://marcc24k.github.io/Hosted-assets/up-arrow.PNG"
     );
@@ -62,7 +62,7 @@ function screenOn() {
 
     $("#cfds-menu").css({ opacity: "50" });
     //BUTTON ILLUMINATION
-    $("#bright-text, .item, .item-alpha, .fmgc-text, .prog-buttons").css({
+    $("#bright-text, .item, .item-alpha, .fmgc-text, .prog-buttons, #mcdu-menu-button > p, #dir-menu,  #prog-menu, #perf-menu, #init-menu, #data-menu, #fplan-menu, #radnav-menu, #fuel-pred-menu, #sec-menu, #atc-menu").css({
       color: "#c3967d",
       fill: "#c3967d"
     });
@@ -96,6 +96,13 @@ function screenOn() {
       "xlink:href",
       "https://marcc24k.github.io/Hosted-assets/ovfy-orange.PNG"
     );
+
+    // SCREEN ON SHOW MENU
+    document.getElementById("mcdu-menu-header").innerHTML = menuItems[15];
+    document.getElementById("fmgc-req").innerHTML = menuItems[0];
+    document.getElementById("atsu").innerHTML = menuItems[4];
+    document.getElementById("aids").innerHTML = menuItems[5];
+    document.getElementById("cfds").innerHTML = menuItems[11];
 
     // ENABLE TICK BUTTONS WHEN SCREEN IS ON
 

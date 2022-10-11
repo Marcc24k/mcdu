@@ -54,15 +54,15 @@
 
     <!--     CFDS MENU STATIC MENU-->
     <div id="cfds-menu">
-      <div id="mcdu-menu">MCDU MENU</div>
-      <div id="fmgc-req">&#60;FMGC</div> 
-      <div id="atsu">&#60;ATSU</div>
-      <div id="aids">&#60;AIDS</div>
-      <div id="cfds">&#60;CFDS</div>
-      <div id="box"></div>
-      <div id="retun">RETURN&#62;</div>
-      <div id="comm-menu"><!----EMPTY BUCKET TO BE FILLED---></div>
-      <div id="aoc"><!----EMPTY BUCKET TO BE FILLED---></div>
+      <div id="mcdu-menu-header"><!----MCDU-MENU---> </div>
+      <div id="fmgc-req"><!----FMGC---> </div> 
+      <div id="atsu"><!----ATSU---> </div>
+      <div id="aids"><!----AIDS---> </div>
+      <div id="cfds"><!----CFDS---> </div>
+      <div id="box"><!--BOX-----></div>
+      <div id="retun"><!----RETURN---> </div>
+      <div id="comm-menu"><!----COMM-MENU---></div>
+      <div id="aoc"><!----AOC---></div>
 
     </div>
 
@@ -194,161 +194,62 @@
         <rect x="33" y="36" rx="15" ry="5" width="95" height="155" style="fill:#3a4650;
 ;stroke-width:5;opacity:1" />
 
-        <!--DIR -->
-        <!-- <button class="dir"><p>DIR</p></button> -->
-        <!-- <button class="prog"><p>PROG</p></button>
-        <button class="perf"><p>PERF</p></button>
-        <button class="init"><p>INIT</p></button>
-        <button class="data"><p>DATA</p></button>
-        <button class="f-plan"><p>F-PLAN</p></button>
-        <button class="rad-nav"><p>RAD NAV</p></button>
-        <button class="fuel-pred"><p>FUEL-PRED</p></button>
-        <button class="sec f-plan"><p>SEC F-PLAN</p></button>
-        <button class="atc comm"><p>ATC COMM</p></button>
-        <button class="mcdu-menu"><p>MCDU MENU</p></button>
-        <button class="airport"><p>AIRPORT</p></button>
-        <button class="arrow-up"><p>ARROW-UP</p></button>
-        <button class="next-page"><p>NEXT PAGE</p></button>
-        <button class="arrow-down"><p>ARROW-DOWN</p></button>
-        <button class="blank-one"><p></p></button>
-        <button class="blank-two"><p></p></button> -->
+         
+ 
+<!----------------------------------------------PROGRAM MENU BUTTONS-------ALL NEW BUTTONS GO BELOW--------------------------------------------------------------------------->
 
-        <rect x="40" y="40" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text-->
-        <text onclick= "dirt()" id="dir" class="prog-buttons" x="60" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          DIR</text>
+ <div id="prog-menu-container">
 
-        <!--PROG -->
-        <rect x="85" y="40" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="105" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          PROG</text>
+  <!--DIR MENU-->
+  <button onclick="dirt()" id="dir-menu"><p>DIR</p></button> 
+  <!--PROG MENU-->
+  <button onclick="progMenu()" id="prog-menu"><p>PROG</p></button> 
+  <!--PERF MENU-->
+  <button onclick="perfMenu()" id="perf-menu"><p>PERF</p></button>
+   <!--INIT MENU-->
+  <button onclick="initMenu()" id="init-menu"><p>INIT</p></button> 
+  <!--DATA MENU-->
+  <button onclick="dataMenu()" id="data-menu"><p>DATA</p></button> 
+  <!--F-PLAN MENU-->
+  <button onclick="fPlanMenu()" id="fplan-menu"><p><span style="
+    position: absolute;
+    width: 33px;
+    left: 0px;">F-PLAN</span></p></button> 
+  <!--RAD NAV MENU-->
+  <button onclick="radNavMenu()" id="radnav-menu"><p>RAD NAV</p></button>
+   <!--FUEL PRED MENU-->
+  <button onclick="fuelPredMenu()" id="fuel-pred-menu"><p>FUEL PRED</p></button>
+   <!--SEC F-PLAN MENU-->
+  <button onclick="secMenu()" id="sec-menu"><p>SEC 
+    <span style="
+    position: absolute;
+    top: 12px;
+    width: 33px;
+    left: 0px;"> F-PLAN
+  </span></p></button>
+   <!--ATC COMM MENU-->
+  <button onclick="atcMenu()" id="atc-menu"><p>ATC COMM</p></button> 
+ <!--MCDU MENU-->
+ <button onclick="mcduMenuButton()" id="mcdu-menu-button"><p> MCDU MENU </p></button>
 
-        <!--PERF -->
-        <rect x="130" y="40" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="150" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          PERF</text>
+<!-- VERTICAL MENU -->
 
-        <!--INIT -->
-        <rect x="175" y="40" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="195" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          INIT</text>
+  <!--AIRPORT MENU-->
+  <!-- <button onclick="airportMenu()" id="airport-menu"><p >AIRPORT</p></button>  -->
+  <!--UP-ARROW MENU-->
+  <!-- <button onclick="upMenu()" id="up-menu"><p >UP</p></button>  -->
+  <!--NEXT PAGE MENU-->
+  <!-- <button onclick="nextPageMenu()" id="nextpage-menu"><p >NEXT PAGE</p></button>  -->
+  <!--DOWN ARROW MENU-->
+  <!-- <button onclick="downMenu()" id="down-menu"><p >DOWN</p></button>  -->
+  <!--BLANK MENU-->
+  <!-- <button onclick="blankMenu()" class="blank-menu"><p ></p></button>  -->
+  <!--BLANK MENU-->
+  <!-- <button onclick="blankMenu()" class="blank-menu"><p ></p></button>  -->
 
-        <!--DATA -->
-        <rect x="220" y="40" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="242" y="57" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          DATA</text>
+</div>
 
-        <!-----------------------BOTTOM ROW----------------------------------------------------->
-
-        <!--F-PLAN -->
-
-        <rect x="40" y="70" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text-->
-        <text class="prog-buttons" x="60" y="87" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          F-PLAN</text>
-
-        <!--RAD NAV -->
-        <rect x="85" y="70" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="105" y="81" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="105">RAD</tspan>
-          <tspan dy="10" x="103">NAV</tspan>
-        </text>
-
-        <!--FUEL PRED -->
-        <rect x="130" y="70" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="150" y="81" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="150">FUEL</tspan>
-          <tspan dy="10" x="147">PRED</tspan>
-        </text>
-
-        <!--SEC F-PLAN -->
-        <rect x="175" y="70" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="195" y="81" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="195">SEC</tspan>
-          <tspan dy="10" x="195">F-PLAN</tspan>
-
-        </text>
-
-        <!--ATC COMM -->
-        <rect x="220" y="70" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="242" y="81" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="242">ATC</tspan>
-          <tspan dy="10" x="239">COMM</tspan>
-
-        </text>
-
-        <!--MCDU MENU-->
-
-        <!--MCDU MENU -->
-        <rect x="275" y="70" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="275" y="81" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="296">MCDU</tspan>
-          <tspan dy="10" x="293">MENU</tspan>
-
-        </text>
-
-        <!--------------------------VERTICAL PROGRAM BUTTONS---------------------------------->
-
-        <!--AIRPORT -->
-
-        <rect x="40" y="100" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-        <!--Text -->
-        <text class="prog-buttons" x="40" y="111" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="61">AIR</tspan>
-          <tspan dy="10" x="58">PORT</tspan>
-
-        </text>
-
-        <!--UP ARROW -->
-
-        <svg>
-          <!--ARROW BOX  -->
-          <rect x="85" y="100" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-
-          <!--ARROW UP            -->
-          <image class="up" x="95" y="100" width="15" height="25" value="src" xlink:href="https://marcc24k.github.io/Hosted-assets/up-arrow.PNG" clip-path="url(#circleView)" />
-
-        </svg>
-
-        <!--DOWN ARROW -->
-
-        <svg>
-
-          <!--ARROW BOX            -->
-          <rect x="85" y="130" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-
-          <!--ARROW DOWN            -->
-          <image class="down" x="95" y="130" width="18" height="25" xlink:href="https://marcc24k.github.io/Hosted-assets/down-arrow.PNG" clip-path="url(#circleView)" />
-
-        </svg>
-
-        <!--NEXT PAGE -->
-
-        <rect x="40" y="130" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-
-        <!--Text -->
-        <text class="prog-buttons" x="85" y="142" fill="whitesmoke" text-anchor="middle" font-size="10" font-family="monospace">
-          <tspan dy="" x="60">NEXT</tspan>
-          <tspan dy="10" x="57">PAGE</tspan>
-
-        </text>
-
-        <!--          <img src="https://marcc24k.github.io/Hosted-assets/DOWN%20ARROW.PNG"> -->
-        <!--BLANK -->
-
-        <rect x="40" y="160" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-
-        <rect x="85" y="160" width="40" height="25" r="6" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1" stroke-linejoin="round" style="fill: rgb(0, 0, 0); stroke: rgb(108, 107, 107); stroke-width: 1; stroke-linejoin: round;"></rect>
-      </svg>
+<!-------------------------------------------------------------------------------------------------------------------------------->
 
       <!--BRIGHTNESS KNOB-->
 
@@ -370,7 +271,7 @@
     </div>
   </div>
 
-  <!--mcdu menu-->
+  <!--MCDU MENU HEADER-->
   <div id="mcdu-container">
     <div class="mcdu">
       <h1 class="mcdu-text">MCDU</h1>

@@ -9,7 +9,7 @@ let menuItems = [
     "&#60AIDS", // 5
     "&#60CPC", // 6
     "&#60CPC-2", // 7
-    "&#60RETURN", // 8
+    "RETURN&#62", // 8
     "&#60TEST", // 9
     "", // 10  BLANK RETURN
     "&#60CFDS", // 11
@@ -38,7 +38,7 @@ let menuItems = [
   }
   
   function tickTwo() {
-    document.getElementById("mcdu-menu").innerHTML = menuItems[12];
+    document.getElementById("mcdu-menu-header").innerHTML = menuItems[12];
     document.getElementById("aoc").innerHTML = menuItems[13];
     document.getElementById("comm-menu").innerHTML = menuItems[14];
 
@@ -59,11 +59,12 @@ let menuItems = [
   //DIR MENU
   
   function dirt() {
-    // let html = document.getElementById("dir").innerHTML;
     document.getElementById("fmgc-req").innerHTML = menuItems[9];
     document.getElementById("atsu").innerHTML = menuItems[9];
     document.getElementById("aids").innerHTML = menuItems[9];
     document.getElementById("cfds").innerHTML = menuItems[10];
+    document.getElementById("retun").innerHTML = menuItems[8];
+
   
     console.log("DIR MENU WORKS!");
   }
@@ -71,18 +72,44 @@ let menuItems = [
   //   RETURN TO MAIN MENU
   
   function retun() {
-    document.getElementById("mcdu-menu").innerHTML = menuItems[15];
+    document.getElementById("mcdu-menu-header").innerHTML = menuItems[15];
     document.getElementById("fmgc-req").innerHTML = menuItems[0];
     document.getElementById("atsu").innerHTML = menuItems[4];
     document.getElementById("aids").innerHTML = menuItems[5];
     document.getElementById("cfds").innerHTML = menuItems[11];
+    
+
 
 
     // HIDE WHEN RETURNED
-    // document.getElementById("mcdu-menu").innerHTML = menuItems[10];
     document.getElementById("aoc").innerHTML = menuItems[10];
     document.getElementById("comm-menu").innerHTML = menuItems[10];
+    document.getElementById("retun").innerHTML = menuItems[10];
+
 
     
   }
   
+
+  // ANYTIME MCDU IS PRESSED YOU ARE TAKEN TO MAIN MENU
+
+  
+
+  function mcduMenuButton() {
+    document.getElementById("mcdu-menu-header").innerHTML = menuItems[15];
+    document.getElementById("fmgc-req").innerHTML = menuItems[0];
+    document.getElementById("atsu").innerHTML = menuItems[4];
+    document.getElementById("aids").innerHTML = menuItems[5];
+    document.getElementById("cfds").innerHTML = menuItems[11];
+    
+
+
+
+    // HIDE WHEN RETURNED
+    document.getElementById("aoc").innerHTML = menuItems[10];
+    document.getElementById("comm-menu").innerHTML = menuItems[10];
+    document.getElementById("retun").innerHTML = menuItems[10];
+
+
+    
+  }

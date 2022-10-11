@@ -1,3 +1,11 @@
+/* body{
+  background: url('../images/center-pedistal.PNG');
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+} */
+
+
 #bright-text,
 .item,
 .item-alpha,
@@ -25,7 +33,7 @@
   height: 600px;
   border: 1px solid #46535e;
   border-radius: 9px;
-  left: 500px;
+  left: 300px;
   background: linear-gradient(
     346deg,
     rgba(67, 86, 98, 1) 0%,
@@ -298,12 +306,11 @@
   
 }
 
-#mcdu-menu {
+#mcdu-menu-header {
   position: absolute;
   min-width: 100%;
   min-height: auto;
   /*     border: 2px solid blue; */
-  margin-left: 10px;
   color: whitesmoke;
   font-family: monospace;
 }
@@ -380,21 +387,18 @@
   top: 55px;
 }
 
-#retun {
+#retun, 
+#comm-menu {
   position: relative;
   /* border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
-  top: 120px;
+  top: 122px;
   left: 223px;
 }
 
 /* COMM-MENU */
 #comm-menu {
-  position: relative;
-  min-width: 35px;
-  min-height: 5%;
-  top: 120px;
   left: 208px;
 }
 
@@ -663,7 +667,7 @@
   left: 5px;
 }
 
-/* MCDU MENU */
+/* MCDU CCONTAINER MENU */
 #mcdu-container {
   position: absolute;
   width: 20px;
@@ -723,6 +727,142 @@ h1 {
   left: 325px;
   box-shadow: -2px 1px 1px 0px #9f9d9d;
 }
+
+#prog-menu-container{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 239px;
+  height: 58px;
+  left: 34px;
+  top: 273px;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+/* HORIZONTAL BUTTONS GLOBAL SHAPE */
+#dir-menu, 
+#prog-menu,
+#perf-menu,
+#init-menu, 
+#data-menu, 
+#fplan-menu, 
+#radnav-menu, 
+#fuel-pred-menu, 
+#sec-menu, 
+#atc-menu 
+{
+    position: relative;
+    width: 40px;
+    height: 26px;
+    border: 1px solid #666;
+    border-radius: 15%;
+    background-color: black;
+    color:whitesmoke;
+    font: 10px monospace;
+    
+    
+  }
+
+  /* TOP ROW TEXT ALIGNMENT */
+  #dir-menu >p, 
+  #prog-menu >p,
+  #perf-menu >p,
+  #init-menu >p, 
+  #data-menu > p{
+    position: relative;
+    top: -3px;
+    text-align: center;
+  }
+
+  /* BOTTOM ROW TEXT ALIGNMENT */
+  #fplan-menu > p, 
+  #radnav-menu > p, 
+  #fuel-pred-menu > p, 
+  #sec-menu > p, 
+  #atc-menu > p {
+    position: relative;
+    top: -11px;
+    left: -4px;
+    width: 33px;
+    text-align: center;
+
+  }
+
+  #sec-menu > p > p {
+    position:relative; 
+    top: -10px;
+  } 
+
+
+
+  #mcdu-menu-button {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    border: 1px solid #666;
+    border-radius: 15%;
+    background-color: black;
+    color: whitesmoke;
+    font: 10px monospace;
+    left: 249px;
+    top: 32px;
+  }
+
+  /* VERTICAL BUTTONS MENU */
+
+/* 
+  #airport-menu,
+  #up-menu, 
+  #nextpage-menu, 
+  #down-menu, 
+  .blank-menu,
+ 
+{
+    position: relative;
+    width: 40px;
+    height: 26px;
+    border: 1px solid #666;
+    border-radius: 15%;
+    background-color: black;
+    color:whitesmoke;
+    font: 10px monospace;
+    
+    
+  } */
+
+
+  /* #prog-menu{
+    position: absolute;
+    top: 275px;
+    left: 40px; 
+  } */
+
+
+  /* DIR BUTTON POSITIONING */
+  /* #dir-menu{
+    position: absolute;
+    top: 275px;
+    left: 40px;
+   } */
+  
+  /* MCDU BUTTON POSITIONING */
+/* #mcdu-menu-button{
+  position: absolute;
+  left: 274px;
+  top: 304px;
+}  */
+
+/* MCDU BUTTON TEXT POSITIONING */
+#mcdu-menu-button > p {
+  position: absolute;
+  top: -9px;
+  left: 0px;
+}
+ 
+
 
 #bright-text {
   position: absolute;
