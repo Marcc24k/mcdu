@@ -66,7 +66,40 @@
 
     </div>
 
+
+    
+
   </div>
+
+
+
+   <!--     AIDS STATIC MENU-->
+   
+   <div id="aids-menu-container">
+    <!-- LEFT SIDE TICKS MENU -->
+    <div id="aids-header"><!---AIDS---></div>
+    <div id="parameter-call-up" style= "font-size:8px"><!---PARAMETER CALL UP------></div>
+    <div id="label"> <!---LABEL---> </div> 
+    <div id="special-function" style= "font-size:8px"><!----SPECIAL FUNCTION / ---> </div>
+    <div id="reprogramming"><!----REPROGRAMMING---> </div>
+    <div id="dar-recording"><!----DAR RECORDING---> </div>
+    <div id="stored-left" style= "font-size:8px"><!--STORED-----></div>
+    <div id="sar-data"><!----SAR DATA---> </div>
+    <div id="man-request" style= "font-size:8px"> <!----MAN REQST---></div>
+    <div id="sar-recording"><!----SAR/RECORDING---></div>
+
+    <!-- RIGHT SIDE TICK MENU -->
+    
+    <div id="alpha"><!----ALPHA---> </div>
+    <div id="pcmcia"><!----PCMCIA CARD---> </div> 
+    <div id="airline"><!----AIRLINE---> </div>
+    <div id="functions"><!----FUNCTIONS---> </div>
+    <div id="stored-right"><!----STORED---> </div>
+    <div id="REPORTS"><!--REPORTS-----></div>
+    <div id="man-request-right"><!----MAN REQST RIGHT---></div>
+    <div id="REPORTS"><!----REPORTS---></div>
+  </div>
+
 
   <!--   MCDU SCREEN BUTTONS -->
   <div id="mcdu-left-buttons">
@@ -79,7 +112,7 @@
       <button id="L2-button"></button>
     </p>
     <div class="L3 tick "></div>
-    <p>
+    <p onclick="aidsMenu()">
       <button id="L3-button"></button>
     </p>
     <div class="L4 tick "></div>
@@ -94,10 +127,7 @@
     <p>
       <button id="L6-button"></button>
     </p>
-    <div class="L7 tick "></div>
-    <p>
-      <button id="L7-button"></button>
-    </p>
+   
 
     <!--   MCDU SCREEN white-lineS -->
 
@@ -110,7 +140,7 @@
       <div class="white line-four"></div>
       <div class="white line-five"></div>
       <div class="white line-six"></div>
-      <div class="white line-seven"></div>
+      
     </div>
 
     <!--white-line RIGHT SIDE        -->
@@ -121,7 +151,7 @@
       <div class="white-right line-eleven"></div>
       <div class="white-right line-twelve"></div>
       <div class="white-right line-thirteen"></div>
-      <div class="white-right line-fourteen"></div>
+      
     </div>
 
     <!--FINGER L-guardS-->
@@ -171,14 +201,10 @@
     </p>
     <div class="R6 tick "></div>
     <p>
-      <button id="R6-button"></button>
+      <button  onclick= "retun()" id="R6-button"></button>
 
     </p>
-    <div class="R7 tick "></div>
-    <p>
-      <button  onclick= "retun()" id="R7-button"></button>
-
-    </p>
+    
   </div>
 
   <!--   MCDU PROGRAM BUTTONS -->
@@ -201,26 +227,26 @@
  <div id="prog-menu-container">
 
   <!--DIR MENU-->
-  <button onclick="dirt()" id="dir-menu"><p>DIR</p></button> 
+  <button onclick="dirt()" id="dir-menu" class="ilumination" ><p>DIR</p></button> 
   <!--PROG MENU-->
-  <button onclick="progMenu()" id="prog-menu"><p>PROG</p></button> 
+  <button onclick="progMenu()" id="prog-menu" class="ilumination" ><p>PROG</p></button> 
   <!--PERF MENU-->
-  <button onclick="perfMenu()" id="perf-menu"><p>PERF</p></button>
+  <button onclick="perfMenu()" id="perf-menu" class="ilumination" ><p>PERF</p></button>
    <!--INIT MENU-->
-  <button onclick="initMenu()" id="init-menu"><p>INIT</p></button> 
+  <button onclick="initMenu()" id="init-menu" class="ilumination" ><p>INIT</p></button> 
   <!--DATA MENU-->
-  <button onclick="dataMenu()" id="data-menu"><p>DATA</p></button> 
+  <button onclick="dataMenu()" id="data-menu" class="ilumination" ><p>DATA</p></button> 
   <!--F-PLAN MENU-->
-  <button onclick="fPlanMenu()" id="fplan-menu"><p><span style="
+  <button onclick="fPlanMenu()" id="fplan-menu" class="ilumination" ><p><span style="
     position: absolute;
     width: 33px;
     left: 0px;">F-PLAN</span></p></button> 
   <!--RAD NAV MENU-->
-  <button onclick="radNavMenu()" id="radnav-menu"><p>RAD NAV</p></button>
+  <button onclick="radNavMenu()" id="radnav-menu" class="ilumination" ><p>RAD NAV</p></button>
    <!--FUEL PRED MENU-->
-  <button onclick="fuelPredMenu()" id="fuel-pred-menu"><p>FUEL PRED</p></button>
+  <button onclick="fuelPredMenu()" id="fuel-pred-menu" class="ilumination" ><p>FUEL PRED</p></button>
    <!--SEC F-PLAN MENU-->
-  <button onclick="secMenu()" id="sec-menu"><p>SEC 
+  <button onclick="secMenu()" id="sec-menu" class="ilumination" ><p>SEC 
     <span style="
     position: absolute;
     top: 12px;
@@ -228,33 +254,41 @@
     left: 0px;"> F-PLAN
   </span></p></button>
    <!--ATC COMM MENU-->
-  <button onclick="atcMenu()" id="atc-menu"><p>ATC COMM</p></button> 
+  <button onclick="atcMenu()" id="atc-menu" class="ilumination" ><p>ATC COMM</p></button> 
  <!--MCDU MENU-->
- <button onclick="mcduMenuButton()" id="mcdu-menu-button"><p> MCDU MENU </p></button>
-
+ <button onclick="mcduMenuButton()" id="mcdu-menu-button" class="ilumination"><p> MCDU MENU </p></button>
+</div>
 <!-- VERTICAL MENU -->
 
+<div id="prog-vertical-menu-container" ">
+
   <!--AIRPORT MENU-->
-  <!-- <button onclick="airportMenu()" id="airport-menu"><p >AIRPORT</p></button>  -->
+  <button onclick="airportMenu()" id="airport-menu" class="ilumination" ><p > AIR <span style="
+    position: absolute;
+    top: 12px;
+    width: 33px;
+    left: -2px;
+  "> PORT</span></p></button> 
   <!--UP-ARROW MENU-->
-  <!-- <button onclick="upMenu()" id="up-menu"><p >UP</p></button>  -->
+  <button onclick="upMenu()" id="up-menu" class="ilumination" ><img class="up" src="/images/up-arrow.PNG" alt="Up Arrow White" width="15" height="20"></button> 
   <!--NEXT PAGE MENU-->
-  <!-- <button onclick="nextPageMenu()" id="nextpage-menu"><p >NEXT PAGE</p></button>  -->
+  <button onclick="nextPageMenu()" id="nextpage-menu" class="ilumination" ><p >NEXT PAGE</p></button> 
   <!--DOWN ARROW MENU-->
-  <!-- <button onclick="downMenu()" id="down-menu"><p >DOWN</p></button>  -->
+  <button onclick="downMenu()" id="down-menu" class="ilumination" ><img class="down" src="/images/down-arrow.PNG" alt="Down Arrow White" width="15" height="20"></button> 
   <!--BLANK MENU-->
-  <!-- <button onclick="blankMenu()" class="blank-menu"><p ></p></button>  -->
+  <button onclick="blankMenu()" class="blank-menu" class="ilumination" ><p ></p></button> 
   <!--BLANK MENU-->
-  <!-- <button onclick="blankMenu()" class="blank-menu"><p ></p></button>  -->
+  <button onclick="blankMenu()" class="blank-menu" class="ilumination" ><p ></p></button> 
 
 </div>
+
 
 <!-------------------------------------------------------------------------------------------------------------------------------->
 
       <!--BRIGHTNESS KNOB-->
 
       <div onclick="screenOn()" id="bright-knob" value="On"></div>
-      <div id="bright-text">BRT</div>
+      <div id="bright-text" class="ilumination">BRT</div>
 
     </div>
     <!--PROG BUTTONS END-->
@@ -272,7 +306,7 @@
   </div>
 
   <!--MCDU MENU HEADER-->
-  <div id="mcdu-container">
+  <div id="mcdu-right-container">
     <div class="mcdu">
       <h1 class="mcdu-text">MCDU</h1>
       <h1 class="menu">MENU</h1>

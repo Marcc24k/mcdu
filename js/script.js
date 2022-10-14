@@ -10,7 +10,7 @@ function screenOn() {
     document.getElementById("bright-knob").value = "On";
     $("#cfds-menu").css({ opacity: "0" });
     //BUTTON ILLUMINATION
-    $("#bright-text, .item, .item-alpha, .prog-buttons, #mcdu-menu-button > p, #dir-menu,  #prog-menu, #perf-menu, #init-menu, #data-menu, #fplan-menu, #radnav-menu, #fuel-pred-menu, #sec-menu, #atc-menu").css({
+    $(".ilumination > p, .item, .item-alpha").css({
       color: "whitesmoke",
       fill: "whitesmoke"
     });
@@ -20,20 +20,20 @@ function screenOn() {
     $(".tick").css({ backgroundColor: "whitesmoke" });
     //FMGC-TEXT BAR LIGHT
     $(".fmgc-text").css({ opacity: ".3" });
+     //MCDU-TEXT BAR RIGHT SIDE ILUMINATION
+     $(".mcdu-text, .menu").css({ opacity: ".3", color: "darkgrey" });
     //RDY LIGHT
     $(".rdy > p").css({ opacity: ".3" });
 
     //ARROWS COLOR
 
     //ARROWS COLOR UP
-    $(".up, .down, .ovfy-arrow ").attr(
-      "xlink:href",
-      "https://marcc24k.github.io/Hosted-assets/up-arrow.PNG"
+    $(".up ").attr(
+      "src", "/images/up-arrow.PNG"
     );
     //ARROWS COLOR DOWN
-    $(".down").attr(
-      "xlink:href",
-      "https://marcc24k.github.io/Hosted-assets/down-arrow.PNG"
+    $(".down ").attr(
+      "src", "/images/down-arrow.PNG"
     );
     //OVFY ARROW
     $(".ovfy-arrow").attr(
@@ -44,6 +44,9 @@ function screenOn() {
     // DISABLE TICK BUTTONS WHEN SCREEN IS OFF
 
     document.getElementById("L1-button").disabled = true;
+    document.getElementById("L2-button").disabled = true;
+    document.getElementById("L3-button").disabled = true;
+
 
     // RESET BUTTONS WHEN SCREEN IS OFF\
     document.getElementById("fmgc-req").innerHTML = menuItems[0];
@@ -51,18 +54,40 @@ function screenOn() {
     document.getElementById("aids").innerHTML = menuItems[5];
     document.getElementById("cfds").innerHTML = menuItems[11];
 
+    // ATSU MENU
     document.getElementById("aoc").innerHTML = menuItems[10];
     document.getElementById("comm-menu").innerHTML = menuItems[10];
 
+// AIDS MENU
+document.getElementById("aids-header").innerHTML = menuItems[10];
+document.getElementById("parameter-call-up").innerHTML = menuItems[10];
+document.getElementById("label").innerHTML = menuItems[10];
+document.getElementById("special-function").innerHTML = menuItems[10];
+document.getElementById("reprogramming").innerHTML = menuItems[10];
+document.getElementById("dar-recording").innerHTML = menuItems[10];
+document.getElementById("stored-left").innerHTML = menuItems[10];
+document.getElementById("sar-data").innerHTML = menuItems[10];
+document.getElementById("man-request").innerHTML = menuItems[10];
+document.getElementById("sar-recording").innerHTML = menuItems[10];
+
     //LOG TO CONSOLE
     console.log("off");
+
+
+
+
+
   } else {
+
+
+
+
     //SCREEN ON
     document.getElementById("bright-knob").value = "Off";
 
     $("#cfds-menu").css({ opacity: "50" });
     //BUTTON ILLUMINATION
-    $("#bright-text, .item, .item-alpha, .fmgc-text, .prog-buttons, #mcdu-menu-button > p, #dir-menu,  #prog-menu, #perf-menu, #init-menu, #data-menu, #fplan-menu, #radnav-menu, #fuel-pred-menu, #sec-menu, #atc-menu").css({
+    $(".ilumination > p, .item, .item-alpha").css({
       color: "#c3967d",
       fill: "#c3967d"
     });
@@ -72,6 +97,9 @@ function screenOn() {
     $(".tick").css({ backgroundColor: "#c3967d" });
     //FMGC-TEXT BAR LIGHT
     $(".fmgc-text").css({ opacity: "90" });
+    //MCDU-TEXT BAR RIGHT SIDE ILUMINATION
+    $(".mcdu-text, .menu").css({ opacity: "90", color: "darkgrey" });
+
     //RDY LIGHT
     $(".rdy > p").css({ color: "green", opacity: "90" });
     // FMGC-REQ RED COLOR
@@ -80,14 +108,12 @@ function screenOn() {
     //ARROWS COLOR
 
     //ARROWS COLOR UP ORANGE
-    $(".up").attr(
-      "xlink:href",
-      "https://marcc24k.github.io/Hosted-assets/up-arrow-orange.PNG"
+    $(".up ").attr(
+      "src", "/images/up-arrow-orange.PNG"
     );
     //ARROWS COLOR DOWN ORANGE
-    $(".down").attr(
-      "xlink:href",
-      "https://marcc24k.github.io/Hosted-assets/down-arrow-orange.PNG"
+    $(".down ").attr(
+      "src", "/images/down-arrow-orange.PNG"
     );
 
     //     OVFY ARROW
@@ -97,7 +123,7 @@ function screenOn() {
       "https://marcc24k.github.io/Hosted-assets/ovfy-orange.PNG"
     );
 
-    // SCREEN ON SHOW MENU
+    // SCREEN "ON" SHOW MENU
     document.getElementById("mcdu-menu-header").innerHTML = menuItems[15];
     document.getElementById("fmgc-req").innerHTML = menuItems[0];
     document.getElementById("atsu").innerHTML = menuItems[4];
@@ -107,6 +133,8 @@ function screenOn() {
     // ENABLE TICK BUTTONS WHEN SCREEN IS ON
 
     document.getElementById("L1-button").disabled = false;
+    document.getElementById("L2-button").disabled = false;
+    document.getElementById("L3-button").disabled = false;
 
     //LOG TO CONSOLE
     console.log("on");

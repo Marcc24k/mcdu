@@ -16,8 +16,23 @@ let menuItems = [
     "ATSU DATALINK", // 12
     "AOC MENU&#62", // 13
     "COMM MENU&#62", // 14
-    "MCDU MENU" // 15
-    
+    "MCDU MENU",  // 15
+
+
+    // AIDS STATIC MENU OPTIONS
+    "AIDS", // 16 HEADER
+    "PARAMETER CALL UP", // 17
+    "&#60LABEL", // 18
+    "SPECIAL FUNCTION", // 19
+    "REPROGRAMMING", // 20
+    "&#60DAR RECRDNG", // 21
+    "STORED", // 22
+    "&#60SAR DATA", // 23
+    "MAN REQST", // 24
+    "&#60SAR/RECRDNG" // 25
+
+
+        
 
   ];
   
@@ -68,6 +83,36 @@ let menuItems = [
   
     console.log("DIR MENU WORKS!");
   }
+
+
+
+// AIDS MENU OPTIONS
+
+function aidsMenu() {
+  document.getElementById("aids-header").innerHTML = menuItems[16];
+  document.getElementById("parameter-call-up").innerHTML = menuItems[17];
+  document.getElementById("label").innerHTML = menuItems[18];
+  document.getElementById("special-function").innerHTML = menuItems[19];
+  document.getElementById("reprogramming").innerHTML = menuItems[20];
+  document.getElementById("dar-recording").innerHTML = menuItems[21];
+  document.getElementById("stored-left").innerHTML = menuItems[22];
+  document.getElementById("sar-data").innerHTML = menuItems[23];
+  document.getElementById("man-request").innerHTML = menuItems[24];
+  document.getElementById("sar-recording").innerHTML = menuItems[25];
+
+
+  console.log("AIDS MENU WORKS!");
+
+  document.getElementById("mcdu-menu-header").innerHTML = menuItems[10];
+  document.getElementById("fmgc-req").innerHTML = menuItems[10];
+  document.getElementById("atsu").innerHTML = menuItems[10];
+  document.getElementById("aids").innerHTML = menuItems[10];
+  document.getElementById("cfds").innerHTML = menuItems[10];
+
+}
+
+
+
   
   //   RETURN TO MAIN MENU
   
@@ -85,6 +130,8 @@ let menuItems = [
     document.getElementById("aoc").innerHTML = menuItems[10];
     document.getElementById("comm-menu").innerHTML = menuItems[10];
     document.getElementById("retun").innerHTML = menuItems[10];
+
+
 
 
     
@@ -106,9 +153,23 @@ let menuItems = [
 
 
     // HIDE WHEN RETURNED
+
+    // ATSU MENU OPTIONS
     document.getElementById("aoc").innerHTML = menuItems[10];
     document.getElementById("comm-menu").innerHTML = menuItems[10];
     document.getElementById("retun").innerHTML = menuItems[10];
+
+    // AIDS MENU OPTIONS
+     document.getElementById("aids-header").innerHTML = menuItems[10];
+  document.getElementById("parameter-call-up").innerHTML = menuItems[10];
+  document.getElementById("label").innerHTML = menuItems[10];
+  document.getElementById("special-function").innerHTML = menuItems[10];
+  document.getElementById("reprogramming").innerHTML = menuItems[10];
+  document.getElementById("dar-recording").innerHTML = menuItems[10];
+  document.getElementById("stored-left").innerHTML = menuItems[10];
+  document.getElementById("sar-data").innerHTML = menuItems[10];
+  document.getElementById("man-request").innerHTML = menuItems[10];
+  document.getElementById("sar-recording").innerHTML = menuItems[10];
 
 
     

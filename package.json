@@ -1,0 +1,22 @@
+{
+  "name": "mcdu",
+  "version": "1.0.0",
+  "description": "MCDU Project to learn new skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcc24k/mcdu.git"
+  },
+  "author": "Marc Cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcc24k/mcdu/issues"
+  },
+  "homepage": "https://github.com/Marcc24k/mcdu#readme",
+  "dependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}

@@ -33,7 +33,7 @@
   height: 600px;
   border: 1px solid #46535e;
   border-radius: 9px;
-  left: 300px;
+  left: 100px;
   background: linear-gradient(
     346deg,
     rgba(67, 86, 98, 1) 0%,
@@ -292,12 +292,12 @@
 }
 
 .line-twelve {
-  top: 123px;
+  top: 126px;
   
 }
 
 .line-thirteen {
-  top: 152px;
+  top: 156px;
   
 }
 
@@ -393,7 +393,7 @@
   /* border: 2px hideen green; */
   min-width: 35px;
   min-height: 5%;
-  top: 122px;
+  top:99px;
   left: 223px;
 }
 
@@ -416,12 +416,117 @@
 /*MCDU LEFT SIDE BUTTONS  */
 #mcdu-left-buttons {
   position: relative;
-  border: 1px hidden red;
+  /* border: 1px hidden red; */
   width: 31px;
   height: 219px;
   margin-left: 0px;
   top: 40px;
 }
+
+
+/* AIDS STATIC MENU STYLES */
+
+#aids-menu-container{
+  position: absolute;
+  /* border: 2px solid red; */
+  width: 280px;
+  height: 216px;
+  left: 50px;
+  top: 37px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  
+
+}
+
+#aids-header{
+  position: relative;
+    /* border: 2px solid white; */
+    width: 40px;
+    height: 18px;
+    left: 114px;
+    top: 0px;
+    color: whitesmoke;
+    font-family: monospace;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+#parameter-call-up, 
+#label, 
+#special-function, 
+#reprogramming, 
+#dar-recording, 
+#stored-left, 
+#sar-data, 
+#man-request, 
+#sar-recording{
+  position: absolute;
+  width: 200px;
+  height: 13px;
+  /* border: 2px solid white; */
+  color: whitesmoke;
+  font-family: monospace;
+  text-align:left;
+  font-size: 13px;
+  left: 15px;
+  letter-spacing: 3px;
+  
+}
+
+
+
+
+#parameter-call-up{
+  left: 32px;
+  text-align:center;
+  letter-spacing: 3px;
+  top: 14px;
+}
+
+#label{
+  top: 20px;
+  
+} 
+
+#special-function{
+  top: 43px;
+
+} 
+
+
+#reprogramming{
+  top: 49px;
+}
+
+#dar-recording{
+  top: 80px;
+}
+
+#stored-left{
+  top: 104px;
+  
+} 
+
+#sar-data{
+  top: 109px;
+}
+
+
+#man-request{
+  top: 133px;
+} 
+
+
+#sar-recording{
+  top: 138px;
+}
+
+
+
 
 /*MCDU SCREEN BUTTONS*/
 #L1-button,
@@ -668,7 +773,7 @@
 }
 
 /* MCDU CCONTAINER MENU */
-#mcdu-container {
+#mcdu-right-container {
   position: absolute;
   width: 20px;
   height: 129px;
@@ -712,7 +817,13 @@ h1 {
 
 .menu {
   top: 53px;
-  position: absolute;
+  position: absolute; 
+}
+
+.mcdu-text, 
+.menu {
+  opacity: 0.3;
+  color:grey; 
 }
 
 /* BRIGHTNESS KNOB */
@@ -736,11 +847,12 @@ h1 {
   /* border: 1px solid red; */
   width: 239px;
   height: 58px;
-  left: 34px;
+  left: 35px;
   top: 273px;
   flex-direction: row;
   align-content: space-between;
 }
+
 
 /* HORIZONTAL BUTTONS GLOBAL SHAPE */
 #dir-menu, 
@@ -796,6 +908,7 @@ h1 {
     top: -10px;
   } 
 
+  
 
 
   #mcdu-menu-button {
@@ -813,14 +926,27 @@ h1 {
 
   /* VERTICAL BUTTONS MENU */
 
-/* 
+  #prog-vertical-menu-container{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 89px;
+    height: 88px;
+    left: 36px;
+    top: 336px;
+    flex-direction: row;
+    align-content: space-between;
+  }
+
+
   #airport-menu,
   #up-menu, 
   #nextpage-menu, 
   #down-menu, 
-  .blank-menu,
- 
-{
+  .blank-menu
+ {
     position: relative;
     width: 40px;
     height: 26px;
@@ -831,29 +957,32 @@ h1 {
     font: 10px monospace;
     
     
-  } */
+  }
+
+  #airport-menu > p{
+    position:relative; 
+    top: -10px;
+  }
+ 
+  #nextpage-menu > p{
+    position: relative;
+    top: -11px;
+  } 
+
+  #up-menu > img{
+    position: relative;
+    top: 2px;
+    left: -2px;
+  } 
+
+  #down-menu > img{
+    position: relative;
+    top: 2px;
+    left: -1px;
+  } 
 
 
-  /* #prog-menu{
-    position: absolute;
-    top: 275px;
-    left: 40px; 
-  } */
-
-
-  /* DIR BUTTON POSITIONING */
-  /* #dir-menu{
-    position: absolute;
-    top: 275px;
-    left: 40px;
-   } */
-  
-  /* MCDU BUTTON POSITIONING */
-/* #mcdu-menu-button{
-  position: absolute;
-  left: 274px;
-  top: 304px;
-}  */
+ 
 
 /* MCDU BUTTON TEXT POSITIONING */
 #mcdu-menu-button > p {
