@@ -49,7 +49,10 @@ let menuItems = [
       };
     })();
   } else {
-    document.getElementById("no-response").innerHTML = " NO RESPONSE...";
+    const noResponse = document.getElementById('no-response') as HTMLDivElement | null;
+     
+console.log(noResponse?.innerHTML); // 👉️ "hello world"
+    // document.getElementById("no-response").innerHTML = " NO RESPONSE...";
   }
   
 
