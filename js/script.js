@@ -1,5 +1,10 @@
 document.body.style.backgroundColor = " grey";
 
+// ALLOWS THE MCDU TO BE DRAGGABLE TO BETTER PLACMENT
+$( function() {
+  $( "#mcdu" ).draggable();
+} );
+
 //SCREEN ON/OFF FUNCTION
 
 function screenOn() {
@@ -29,11 +34,11 @@ function screenOn() {
 
     //ARROWS COLOR UP
     $(".up ").attr(
-      "src", "/images/up-arrow.PNG"
+      "src", "images/up-arrow.PNG"
     );
     //ARROWS COLOR DOWN
     $(".down ").attr(
-      "src", "/images/down-arrow.PNG"
+      "src", "images/down-arrow.PNG"
     );
     //OVFY ARROW
     $(".ovfy-arrow").attr(
@@ -109,11 +114,11 @@ document.getElementById("sar-recording").innerHTML = menuItems[10];
 
     //ARROWS COLOR UP ORANGE
     $(".up ").attr(
-      "src", "/images/up-arrow-orange.PNG"
+      "src", "images/up-arrow-orange.png"
     );
     //ARROWS COLOR DOWN ORANGE
     $(".down ").attr(
-      "src", "/images/down-arrow-orange.PNG"
+      "src", "images/down-arrow-orange.png"
     );
 
     //     OVFY ARROW
