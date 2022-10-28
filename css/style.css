@@ -454,7 +454,7 @@
     font-size: 13px;
 }
 
-
+/* LEFT SIDE AIDS TAGS */
 #parameter-call-up, 
 #label, 
 #special-function, 
@@ -522,6 +522,68 @@
 
 
 #sar-recording{
+  top: 138px;
+}
+
+
+/* RIGHT SIDE AIDS TAGS */
+#alpha, 
+#pcmcia, 
+#airline, 
+#functions, 
+#stored-right, 
+#reports-right-one, 
+#man-request-right, 
+#reports-right-two {
+  position: absolute;
+  width: 200px;
+  height: 13px;
+  /* border: 2px solid white; */
+  color: whitesmoke;
+  font-family: monospace;
+  text-align:right;
+  font-size: 13px;
+  left: 73px;
+  letter-spacing: 3px;
+  
+}
+
+
+#alpha{
+  top: 20px;
+  
+} 
+
+#pcmcia{
+  top: 49px;
+
+} 
+
+
+#airline{
+  top: 75px;
+}
+
+#functions{
+  top: 80px;
+}
+
+#stored-right{
+  top: 104px;
+  
+} 
+
+#reports-right-one{
+  top: 109px;
+}
+
+
+#man-request-right{
+  top: 133px;
+} 
+
+
+#reports-right-two{
   top: 138px;
 }
 

@@ -24,13 +24,22 @@ let menuItems = [
     "PARAMETER CALL UP", // 17
     "&#60LABEL", // 18
     "SPECIAL FUNCTION", // 19
-    "REPROGRAMMING", // 20
+    "&#60REPROGRAMMING", // 20
     "&#60DAR RECRDNG", // 21
     "STORED", // 22
     "&#60SAR DATA", // 23
     "MAN REQST", // 24
-    "&#60SAR/RECRDNG" // 25
+    "&#60SAR/RECRDNG", // 25
 
+    // AIDS RIGHT SIDE MENU
+    "ALPHA&#62", // 26 
+    "PCMCIA&#62", // 27
+    "AIRLINE", // 28
+    "FUNCTIONS&#62", // 29
+    "STORED", // 30
+    "REPORTS&#62", // 31
+    "MAN REQST", // 32
+    "REPORTS&#62", // 33
 
         
 
@@ -93,6 +102,7 @@ let menuItems = [
 function aidsMenu() {
 
  
+  // AIDS MENU LEFT SIDE 
   
     document.getElementById("aids-header").innerHTML = menuItems[16];
     document.getElementById("parameter-call-up").innerHTML = menuItems[17];
@@ -104,6 +114,17 @@ function aidsMenu() {
     document.getElementById("sar-data").innerHTML = menuItems[23];
     document.getElementById("man-request").innerHTML = menuItems[24];
     document.getElementById("sar-recording").innerHTML = menuItems[25];
+
+  // AIDS MENU RIGHT SIDE 
+  document.getElementById("alpha").innerHTML = menuItems[26];
+  document.getElementById("pcmcia").innerHTML = menuItems[27];
+  document.getElementById("airline").innerHTML = menuItems[28];
+  document.getElementById("functions").innerHTML = menuItems[29];
+  document.getElementById("stored-right").innerHTML = menuItems[30];
+  document.getElementById("reports-right-one").innerHTML = menuItems[31];
+  document.getElementById("man-request-right").innerHTML = menuItems[32];
+  document.getElementById("reports-right-two").innerHTML = menuItems[33];
+
   
   
     console.log("AIDS MENU WORKS!");
@@ -170,6 +191,7 @@ function aidsMenu() {
 
     // AIDS MENU OPTIONS
     
+    // LEFT SIDE
   document.getElementById("aids-header").innerHTML = menuItems[10];
   document.getElementById("parameter-call-up").innerHTML = menuItems[10];
   document.getElementById("label").innerHTML = menuItems[10];
@@ -181,6 +203,15 @@ function aidsMenu() {
   document.getElementById("man-request").innerHTML = menuItems[10];
   document.getElementById("sar-recording").innerHTML = menuItems[10];
 
+   // AIDS MENU RIGHT SIDE 
+   document.getElementById("alpha").innerHTML = menuItems[10];
+   document.getElementById("pcmcia").innerHTML = menuItems[10];
+   document.getElementById("airline").innerHTML = menuItems[10];
+   document.getElementById("functions").innerHTML = menuItems[10];
+   document.getElementById("stored-right").innerHTML = menuItems[10];
+   document.getElementById("reports-right-one").innerHTML = menuItems[10];
+   document.getElementById("man-request-right").innerHTML = menuItems[10];
+   document.getElementById("reports-right-two").innerHTML = menuItems[10];
 
     
   }
