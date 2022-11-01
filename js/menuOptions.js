@@ -1,3 +1,5 @@
+alert("It worked!");
+
 
 // ARRAY THAT HOLDS ALL MENU OPTIONS TO BE CALLED.
 let menuItems = [
@@ -64,6 +66,14 @@ let menuItems = [
 
   // ATSU MENU
   function tickTwo() {
+
+//     let twoTick = "";
+//     for (let i = 12; i < 15; i++) {
+//       twoTick += menuItems[i] + "<br>";
+//     }
+    
+// document.getElementById("aoc").innerHTML = twoTick;
+    
     document.getElementById("mcdu-menu-header").innerHTML = menuItems[12];
     document.getElementById("aoc").innerHTML = menuItems[13];
     document.getElementById("comm-menu").innerHTML = menuItems[14];
