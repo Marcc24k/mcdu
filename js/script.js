@@ -13,7 +13,7 @@ function screenOn() {
   if (value == "Off") {
     //SCREEN OFF
     document.getElementById("bright-knob").value = "On";
-    $("#cfds-menu").css({ opacity: "0" });
+    $("#mcdu-menu").css({ opacity: "0" });
     //BUTTON ILLUMINATION
     $(".ilumination > p, .item, .item-alpha").css({
       color: "whitesmoke",
@@ -90,7 +90,7 @@ document.getElementById("sar-recording").innerHTML = menuItems[10];
     //SCREEN ON
     document.getElementById("bright-knob").value = "Off";
 
-    $("#cfds-menu").css({ opacity: "50" });
+    $("#mcdu-menu").css({ opacity: "50" });
     //BUTTON ILLUMINATION
     $(".ilumination > p, .item, .item-alpha").css({
       color: "#c3967d",
