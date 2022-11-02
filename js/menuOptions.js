@@ -1,4 +1,4 @@
-alert("It worked!");
+
 
 
 // ARRAY THAT HOLDS ALL MENU OPTIONS TO BE CALLED.
