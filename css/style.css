@@ -587,6 +587,21 @@
   top: 138px;
 }
 
+/*CFDS MENU*/
+
+#cfds-menu{
+
+  position: absolute;
+  width: 200px;
+  height: 13px;
+  /* border: 2px solid white; */
+  color: whitesmoke;
+  font-family: monospace;
+  text-align:left;
+  font-size: 13px;
+  left: 15px;
+  letter-spacing: 3px;
+}
 
 
 

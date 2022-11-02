@@ -43,11 +43,24 @@ let menuItems = [
     "MAN REQST", // 32
     "REPORTS&#62", // 33
 
+// CFDS MENU
+    "&#60last-leg-report", // 34 
+    "&#60last-leg-ecam-report", // 35
+    "&#60previous-legs-report", // 36
+    "&#60avionics-status", // 37
+    "&#60system-report-test", // 38
+    "&#60post", // 39
+    "&#60*send", // 40
+    "&#60flt-rep", // 41
+    "&#60print*", // 42
+    "&#8250 " // 43
+
+
         
 
   ];
   
-  // ITERATES THROUGH ARRAY AND RETURNS ONLY THREE ITEMS ON FMGC BUTTON WHEN MCDU IS FIRST TURNED ON
+  // TICKONE ITERATES THROUGH ARRAY AND RETURNS ONLY THREE ITEMS ON FMGC BUTTON WHEN MCDU IS FIRST TURNED ON
   let tick = true;
   let items = 0;
   if (tick === true) {
@@ -59,7 +72,7 @@ let menuItems = [
         items++;
       };
     })();
-  } else {
+  } else { 
     document.getElementById("no-response").innerHTML = " NO RESPONSE...";
   }
   
@@ -67,18 +80,11 @@ let menuItems = [
   // ATSU MENU
   function tickTwo() {
 
-//     let twoTick = "";
-//     for (let i = 12; i < 15; i++) {
-//       twoTick += menuItems[i] + "<br>";
-//     }
-    
-// document.getElementById("aoc").innerHTML = twoTick;
-    
-    document.getElementById("mcdu-menu-header").innerHTML = menuItems[12];
+ 
+  document.getElementById("mcdu-menu-header").innerHTML = menuItems[12];
     document.getElementById("aoc").innerHTML = menuItems[13];
     document.getElementById("comm-menu").innerHTML = menuItems[14];
-
-    // HIDE FMGC STATIC MENU
+  // HIDE FMGC STATIC MENU
  
     document.getElementById("fmgc-req").innerHTML = menuItems[10];
     document.getElementById("atsu").innerHTML = menuItems[10];
@@ -86,8 +92,39 @@ let menuItems = [
     document.getElementById("cfds").innerHTML = menuItems[10];
     document.getElementById("retun").innerHTML = menuItems[10];
 
+
+// var x = document.getElementById("mcdu-menu-header").innerHTML = menuItems[12];
+
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+ 
+
+
   
     console.log("ATSU MENU WORKS!");
+  }
+
+
+   function cfdsMenu() {
+
+ 
+    
+    document.getElementById("last-leg-report").innerHTML = menuItems[34];
+    document.getElementById("last-leg-ecam-report").innerHTML = menuItems[35];
+    document.getElementById("previous-legs-report").innerHTML = menuItems[36];
+    document.getElementById("avionics-status").innerHTML = menuItems[37];
+    document.getElementById("system-report-test").innerHTML = menuItems[38];
+    document.getElementById("post").innerHTML = menuItems[39];
+    document.getElementById("send").innerHTML = menuItems[40];
+    document.getElementById("flt-rep").innerHTML = menuItems[41];
+    document.getElementById("print").innerHTML = menuItems[42];
+
+
+  
+    console.log("CFDS MENU WORKS!");
   }
 
 
