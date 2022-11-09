@@ -75,6 +75,17 @@ document.getElementById("sar-data").innerHTML = menuItems[10];
 document.getElementById("man-request").innerHTML = menuItems[10];
 document.getElementById("sar-recording").innerHTML = menuItems[10];
 
+  // AIDS MENU RIGHT SIDE 
+  document.getElementById("alpha").innerHTML = menuItems[10];
+  document.getElementById("pcmcia").innerHTML = menuItems[10];
+  document.getElementById("airline").innerHTML = menuItems[10];
+  document.getElementById("functions").innerHTML = menuItems[10];
+  document.getElementById("stored-right").innerHTML = menuItems[10];
+  document.getElementById("reports-right-one").innerHTML = menuItems[10];
+  document.getElementById("man-request-right").innerHTML = menuItems[10];
+  document.getElementById("reports-right-two").innerHTML = menuItems[10];
+
+
     //LOG TO CONSOLE
     console.log("off");
 
