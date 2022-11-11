@@ -80,6 +80,31 @@ document.getElementById("sar-data").innerHTML = menuItems[10];
 document.getElementById("man-request").innerHTML = menuItems[10];
 document.getElementById("sar-recording").innerHTML = menuItems[10];
 
+      // AIDS MENU RIGHT SIDE 
+      document.getElementById("alpha").innerHTML = menuItems[10];
+      document.getElementById("pcmcia").innerHTML = menuItems[10];
+      document.getElementById("airline").innerHTML = menuItems[10];
+      document.getElementById("functions").innerHTML = menuItems[10];
+      document.getElementById("stored-right").innerHTML = menuItems[10];
+      document.getElementById("reports-right-one").innerHTML = menuItems[10];
+      document.getElementById("man-request-right").innerHTML = menuItems[10];
+      document.getElementById("reports-right-two").innerHTML = menuItems[10];
+
+
+
+
+//CFDS MENU
+    document.getElementById("last-leg-report").innerHTML = menuItems[10];
+    document.getElementById("last-leg-ecam-report").innerHTML = menuItems[10];
+    document.getElementById("previous-legs-report").innerHTML = menuItems[10];
+    document.getElementById("avionics-status").innerHTML = menuItems[10];
+    document.getElementById("system-report-test").innerHTML = menuItems[10];
+    document.getElementById("post").innerHTML = menuItems[10];
+    document.getElementById("send").innerHTML = menuItems[10];
+    document.getElementById("flt-rep").innerHTML = menuItems[10];
+    document.getElementById("print").innerHTML = menuItems[10];
+
+
     //LOG TO CONSOLE
     console.log("off");
 
@@ -142,10 +167,26 @@ document.getElementById("sar-recording").innerHTML = menuItems[10];
 
     // ENABLE TICK BUTTONS WHEN SCREEN IS ON
 
-    document.getElementById("L1-button").disabled = false;
-    document.getElementById("L2-button").disabled = false;
-    document.getElementById("L3-button").disabled = false;
-    document.getElementById("L4-button").disabled = false;
+//     const btn = document.getElementById('btn') as HTMLButtonElement | null;
+
+// if (btn != null) {
+//   btn.disabled = true;
+// }
+
+
+const enableButtons = document.getElementById("L1-button")as HTMLButtonElement | null;
+document.getElementById("L2-button")as HTMLButtonElement | null;
+document.getElementById("L3-button")as HTMLButtonElement | null;
+document.getElementById("L4-button")as HTMLButtonElement | null;
+
+
+if (enableButtons != null) {
+  enableButtons.disabled = true;
+  console.log("buttons")
+}
+
+
+
 
 
     //LOG TO CONSOLE
